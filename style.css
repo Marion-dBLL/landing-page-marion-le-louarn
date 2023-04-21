@@ -1,0 +1,236 @@
+
+/*CONTAINER*/
+.container {
+  width: 900px;
+  margin: auto auto;
+}
+
+/*BODY,H1,H2,H3,LIEN */
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  font-family: 'Inter';
+}
+
+h1, h2, h3 {
+  font-family: 'Outfit';
+}
+
+h1 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+
+h3 {
+font-size: 22px;
+} 
+
+a{
+  text-decoration: none;
+}
+
+
+/*BANNER*/
+
+.banner {
+  background-image: url('images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.card-round{
+background-color: #2f2f30;
+position: center;
+width: 260px;
+height: 260px;
+border-radius:50%;
+margin: auto auto;
+padding: 30px;
+}
+
+.banner p{
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom:25px;
+  opacity: 0.9;
+}
+
+.btn-orange {
+   background-color: #ED2B2A ;
+   color: white;
+   border-radius: 5px;
+   padding: 15px 45px;
+   font-size: 20px;
+   font-weight: 700;
+   transition: 0.3s;
+   display: inline-block;
+}
+
+.btn-orange:hover{
+  transform: scale(1.1);
+}
+
+
+/*CARD WHITE*/
+
+.cards-inline{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-bottom: 50px;
+}
+
+.card-white {
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-white img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-white:hover {
+  transform: scale(1.1);
+}
+
+
+/*VIDEO*/
+
+#video {
+  text-align: center;
+  width: 500px;
+  margin:auto;
+  text-align:center;
+  display: flex;
+  margin-bottom: 50px;
+  }
+
+#txt-video{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#card-video{
+  background-color: #ED2B2A;
+  border-radius: 5px;
+  margin: auto auto;
+  margin-bottom: 30px;
+  width: 650px;
+  height: 6px;
+}
+
+/*FOOTER*/
+
+.footer {
+  text-align: center;
+  background-image: url('images/chaussettes-footer.jpg');
+  background-position: center;
+  background-size: cover;
+  align-content: center;
+  margin-top: 0px;
+  padding-right: 170px;
+  }
+
+.footer img{
+  width: 200px;
+  margin-top: 25px;
+  }
+
+.footer-grid-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 290px;
+  margin: auto;
+}
+
+.cards-invisible-top{
+  background-color:none;
+  position: center;
+  height: 20px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  }
+
+.cards-invisible-txt{
+font-size: 15px;
+margin-top: 20px;
+margin-bottom: 0px;
+padding: 0 0;
+}
+
+.list-inline{
+list-style: none;
+text-align: center;
+margin-top: 0px;
+}
+
+.list-inline i{
+font-size: 45px;
+margin: 25px;
+margin-top: 20px;
+color: #ED2B2A;
+}
+
+.list-inline li {
+display: inline;
+}
+
+.list-inline li:hover{
+transform: scale(1.1);
+transition: all 0.3s ease;
+}
+
+
+
+/* Breaking points */
+
+@media (max-width: 960px) {
+  .container {
+    width: 900px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  }
+
+
+@media (max-width: 720px) {
+  .container {
+    width: 680px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 480px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr;
+  }
+}
